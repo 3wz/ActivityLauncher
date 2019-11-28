@@ -1,4 +1,4 @@
-package com.zdf.activitylauncher;
+package com.puhanda.plugin;
 
 import android.content.Intent;
 import android.os.Bundle;

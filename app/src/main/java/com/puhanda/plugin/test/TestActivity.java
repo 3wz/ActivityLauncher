@@ -1,4 +1,4 @@
-package com.zdf.activitylauncher.test;
+package com.puhanda.plugin.test;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        Log.v("zdf", "TestActivity|getIntent(): " + getIntent().toUri(0));
+        Log.v("puhanda", "TestActivity|getIntent(): " + getIntent().toUri(0));
     }
 
     @Override

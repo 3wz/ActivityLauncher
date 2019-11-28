@@ -1,4 +1,4 @@
-package com.zdf.activitylauncher.test;
+package com.puhanda.plugin.test;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_launcher).setOnClickListener(view -> {
             ActivityLauncher.init(this)
                     .startActivityForResult(TestActivity.class, (resultCode, data) -> {
-                        Log.v("zdf", "TestActivity|onActivityResult: " + resultCode + ", " + data.toUri(0));
+                        Log.v("puhanda", "TestActivity|onActivityResult: " + resultCode + ", " + data.toUri(0));
 
                         tvInfo.setText("resultCode: " + resultCode);
                         tvInfo.append("\n");
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("key2", 2);
             ActivityLauncher.init(this)
                     .startActivityForResult(intent, (resultCode, data) -> {
-                        Log.v("zdf", "TestActivity|onActivityResult: " + resultCode + ", " + data.toUri(0));
+                        Log.v("puhanda", "TestActivity|onActivityResult: " + resultCode + ", " + data.toUri(0));
 
                         tvInfo.setText("resultCode: " + resultCode);
                         tvInfo.append("\n");
